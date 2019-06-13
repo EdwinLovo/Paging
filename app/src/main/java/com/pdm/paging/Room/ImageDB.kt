@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.pdm.paging.Room.Dao.ImageDao
 import com.pdm.paging.Room.Entities.Image
 
-@Database(entities = [Image::class], version = 3, exportSchema = false)
+@Database(entities = [Image::class], version = 4, exportSchema = false)
 abstract class ImageDB: RoomDatabase() {
 
     abstract fun imageDao():ImageDao
