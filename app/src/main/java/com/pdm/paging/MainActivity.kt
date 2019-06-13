@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity(), HomeFragment.OnFragmentInteractionList
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val homeFragment = HomeFragment.newInstance("","")
+        val homeFragment = HomeFragment()
         supportFragmentManager.beginTransaction().replace(R.id.framelayout,homeFragment).addToBackStack("").commit()
     }
 }
