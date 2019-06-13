@@ -11,7 +11,7 @@ const val BASE_URL = "https://taller2-a645b.firebaseio.com/"
 
 interface ImageService {
 
-    @GET("/images.json")
+    @GET("images.json")
     fun getImages():Deferred<Response<Images>>
 
     companion object {

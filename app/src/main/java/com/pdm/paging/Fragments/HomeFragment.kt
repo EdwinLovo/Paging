@@ -93,6 +93,8 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(view.context)
 
+        imageViewModel.retrieveImages()
+
         imageViewModel.allImages.observe(this, Observer { images->
             images?.let { adapter.setImages(it) }
         })
